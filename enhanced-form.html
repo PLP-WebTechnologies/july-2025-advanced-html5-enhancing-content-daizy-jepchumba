@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+    table, th, td {
+      border: 1px solid #555;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    fieldset {
+      border: 1px solid #aaa;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 8px 0 4px;
+    }
+    input, select, textarea, button {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+      border: 1px solid #888;
+      border-radius: 4px;
+    }
+    button {
+      width: auto;
+      background: #007BFF;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with validation.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Popular Web Technologies</h2>
+    <ul>
+      <li>HTML5</li>
+      <li>CSS3</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>PHP</li>
+    </ul>
+
+    <h3>Steps to Build a Website</h3>
+    <ol>
+      <li>Plan and design the layout</li>
+      <li>Write semantic HTML structure</li>
+      <li>Style with CSS</li>
+      <li>Add interactivity using JavaScript</li>
+      <li>Test and deploy</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Web Browser Market Share (2025)</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Browser</th>
+          <th>Market Share</th>
+          <th>Developer</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Chrome</td>
+          <td>65%</td>
+          <td>Google</td>
+        </tr>
+        <tr>
+          <td>Safari</td>
+          <td>20%</td>
+          <td>Apple</td>
+        </tr>
+        <tr>
+          <td>Firefox</td>
+          <td>7%</td>
+          <td>Mozilla</td>
+        </tr>
+        <tr>
+          <td>Edge</td>
+          <td>5%</td>
+          <td>Microsoft</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Demonstration</h2>
+    <figure>
+      <img src="https://via.placeholder.com/400x200" alt="Sample Image">
+      <figcaption>A sample image embedded using HTML5.</figcaption>
+    </figure>
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <br><br>
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>User Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?\d{10,15}$" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required minlength="5" maxlength="15">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6">
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label>
+          <input type="checkbox" name="subscribe" value="yes"> Subscribe to newsletter
+        </label>
+        <label>
+          <input type="radio" name="updates" value="email" required> Receive updates by Email
+        </label>
+        <label>
+          <input type="radio" name="updates" value="sms"> Receive updates by SMS
+        </label>
+      </fieldset>
+
+      <button type="submit">Register</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Assignment | Designed for Practice</p>
+  </footer>
+
+</body>
+</html>
